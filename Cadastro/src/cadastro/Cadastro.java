@@ -4,8 +4,8 @@ package cadastro;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.util.Scanner;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Cadastro {
 
@@ -56,10 +56,11 @@ public class Cadastro {
     } catch (AWTException ex) {
     }
         
-        if (loginCadast != login  && senhaCadast != senha) {
-            System.out.println("Seja Bem-Vind@");
-        } else {
+        if (loginCadast != login  || senhaCadast != senha) {
             System.out.println("Senha ou Login Incorreto, tente novamente!");
+        } else {
+            System.out.println("Seja Bem-Vind@");
         }
-        }
+
+    }
 }
